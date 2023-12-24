@@ -1,4 +1,5 @@
 # FuncProgGo - Functional Programming in Go
+[![Go Report Card](https://goreportcard.com/badge/github.com/mrtkp9993/funcproggo)](https://goreportcard.com/report/github.com/mrtkp9993/funcproggo)
 
 A hobby project to use functional programming paradigms in Go.
 
