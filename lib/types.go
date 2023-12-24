@@ -64,3 +64,18 @@ func ListFromArray[T Any](array []T) List[T] {
 	copy(list, array)
 	return list
 }
+
+func Head[T Any](lst List[T]) T {
+	if len(lst) == 0 {
+		var zero T
+		return zero
+	}
+	return lst[0]
+}
+
+func Tail[T Any](lst List[T]) List[T] {
+	if len(lst) == 0 {
+		return nil
+	}
+	return lst[1:]
+}
