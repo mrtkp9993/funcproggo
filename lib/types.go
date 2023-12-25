@@ -59,6 +59,22 @@ func Equal[T Any](lst1, lst2 List[T]) Bool {
 	return true
 }
 
+func (list List[Int]) Equal(other Any) Bool {
+	otherList, ok := other.(List[Int])
+	if !ok {
+		return false
+	}
+	if len(list) != len(otherList) {
+		return false
+	}
+	for i, v := range list {
+		if !v.Equal(otherList[i]) {
+			return false
+		}
+	}
+	return true
+}
+
 func ListFromArray[T Any](array []T) List[T] {
 	list := make(List[T], len(array))
 	copy(list, array)
