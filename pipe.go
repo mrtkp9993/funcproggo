@@ -1,4 +1,4 @@
-package lib
+package funcproggo
 
 func Pipe2[A, B, C Any](a A, f func(A) B, g func(B) C) C {
 	return g(f(a))

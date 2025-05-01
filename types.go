@@ -1,4 +1,4 @@
-package lib
+package funcproggo
 
 type Any interface {
 	Equal(Any) Bool

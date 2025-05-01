@@ -1,4 +1,4 @@
-package lib
+package funcproggo
 
 type Predicate[A any] func(A) bool
 

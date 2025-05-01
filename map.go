@@ -1,4 +1,4 @@
-package lib
+package funcproggo
 
 func Map[A Any, B Any](lst List[A], f func(A) B) List[B] {
 	var ret List[B]

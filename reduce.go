@@ -1,4 +1,4 @@
-package lib
+package funcproggo
 
 func reduce[A Any, B Any](lst List[A], f func(B, A) B, init B) B {
 	res := init
